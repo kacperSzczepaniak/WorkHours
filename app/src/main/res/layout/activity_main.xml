@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kacper.godzinypracy.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/startH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/_40sdp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:layout_alignBottom="@+id/startDesc"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:id="@+id/separatorUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="@dimen/_18sdp"
+        android:layout_alignBaseline="@+id/startH"
+        android:layout_alignBottom="@+id/startH"
+        android:layout_toRightOf="@+id/startH"
+        android:layout_toEndOf="@+id/startH" />
+
+    <EditText
+        android:id="@+id/startMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/separatorUp"
+        android:layout_alignBottom="@+id/separatorUp"
+        android:layout_toEndOf="@+id/separatorUp"
+        android:layout_toRightOf="@+id/separatorUp"
+        android:width="@dimen/_40sdp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <TextView
+        android:id="@+id/startDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/startTitle"
+        android:textSize="@dimen/_18sdp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/startH"
+        android:layout_toStartOf="@+id/startH"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp" />
+
+    <TextView
+        android:id="@+id/endDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="@string/endTitle"
+        android:textSize="@dimen/_18sdp"
+        android:layout_below="@+id/startDesc"
+        android:layout_alignRight="@+id/startDesc"
+        android:layout_alignEnd="@+id/startDesc" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:onClick="btnCalcFire"
+        android:text="@string/buttonDesc"
+        android:layout_below="@+id/endDesc"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/resDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="@string/resultTitle"
+        android:textSize="@dimen/_18sdp"
+        android:layout_below="@+id/endDesc"
+        android:layout_alignRight="@+id/endDesc"
+        android:layout_alignEnd="@+id/endDesc" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/resDesc"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_toEndOf="@+id/resDesc"
+        android:layout_toRightOf="@+id/resDesc"
+        android:text="@string/result"
+        tools:textSize="@dimen/_18sdp" />
+
+    <EditText
+        android:id="@+id/endH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/_40sdp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:layout_above="@+id/resDesc"
+        android:layout_alignLeft="@+id/startH"
+        android:layout_alignStart="@+id/startH" />
+
+    <TextView
+        android:id="@+id/separatorDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/endH"
+        android:layout_alignBottom="@+id/endH"
+        android:layout_toEndOf="@+id/endH"
+        android:layout_toRightOf="@+id/endH"
+        android:text=":"
+        android:textSize="@dimen/_18sdp" />
+
+    <EditText
+        android:id="@+id/endMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/_40sdp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:layout_alignBaseline="@+id/separatorDown"
+        android:layout_alignBottom="@+id/separatorDown"
+        android:layout_toRightOf="@+id/separatorDown"
+        android:layout_toEndOf="@+id/separatorDown" />
+
+</RelativeLayout>
+
+

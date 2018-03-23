@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Godziny pracy</string>
+    <string name="startTitle">Początek pracy: </string>
+    <string name="endTitle">Koniec pracy: </string>
+    <string name="resultTitle">Wynik: </string>
+    <string name="buttonDesc">Oblicz</string>
+    <string name="result" />
+    <string name="inalidTime">Nieprawidłowy format godziny!</string>
+    <string name="minusTime">Czas nie może być ujemny!</string>
+</resources>
